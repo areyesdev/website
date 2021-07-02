@@ -17,7 +17,7 @@ export default function Home() {
             ecosistema de JavaScript. Amante de las buenas prácticas y del software de calidad.
           </h2>
           <Image
-            alt="Alexander Saavedra"
+            alt="Andres Reyes"
             height={900}
             width={900}
             src="/static/images/profile-new.jpg"
