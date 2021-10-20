@@ -1,9 +1,9 @@
-import Container from "@/components/Container";
 import he from "he";
-import Head from "next/head";
 import Image from "next/image";
 import hydrate from "next-mdx-remote/hydrate";
 import renderToString from "next-mdx-remote/render-to-string";
+
+import Container from "@/components/Container";
 
 import { getBlogSlugs, getPost } from "../../lib/data";
 

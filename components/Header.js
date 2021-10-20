@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
-import NextLink from 'next/link';
+import NextLink from "next/link";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [mounted, setMounted] = useState(false);
@@ -18,17 +18,15 @@ export default function Header() {
         aria-label="Toggle Dark Mode"
         type="button"
         className="w-10 h-10 p-3 bg-gray-200 rounded dark:bg-gray-800"
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      >
+        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
         {mounted && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
             stroke="currentColor"
-            className="w-4 h-4 text-gray-800 dark:text-gray-200"
-          >
-            {theme === 'dark' ? (
+            className="w-4 h-4 text-gray-800 dark:text-gray-200">
+            {theme === "dark" ? (
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -51,9 +49,7 @@ export default function Header() {
           <a className="p-2 text-gray-900 md:p-4 dark:text-gray-100">HOME</a>
         </NextLink>
         <NextLink href="/about">
-          <a className="p-2 text-gray-900 md:p-4 dark:text-gray-100">
-            SOBRE MI
-          </a>
+          <a className="p-2 text-gray-900 md:p-4 dark:text-gray-100">SOBRE MI</a>
         </NextLink>
         <NextLink href="/usos">
           <a className="p-2 text-gray-900 md:p-4 dark:text-gray-100">USOS</a>

@@ -5,6 +5,7 @@ const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   reactStrictMode: true,
+  webpack5: false,
   webpack: (config) => {
     config.plugins = config.plugins || [];
 

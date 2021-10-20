@@ -1,18 +1,18 @@
-import { useRouter } from 'next/router';
-import Head from 'next/head';
+import Head from "next/head";
+import { useRouter } from "next/router";
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Andres Reyes – FrontEnd Developer.',
-    description: 'Front-end developer, JavaScript lover.',
-    image: 'https://andresreyes.netlify.app/',
-    type: 'website',
-    ...customMeta
+    title: "Andres Reyes – FrontEnd Developer.",
+    description: "Front-end developer, JavaScript lover.",
+    image: "https://andresreyes.netlify.app/",
+    type: "website",
+    ...customMeta,
   };
   return (
     <div className="bg-white dark:bg-black">
@@ -20,8 +20,8 @@ export default function Container(props) {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property='og:url' content={`http://localhost:3000${router.asPath}`} />
-        <link rel='canonical' href={`http://localhost:3000${router.asPath}`} />
+        <meta property="og:url" content={`http://localhost:3000${router.asPath}`} />
+        <link rel="canonical" href={`http://localhost:3000${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Andres Reyes" />
         <meta property="og:description" content={meta.description} />
@@ -32,15 +32,10 @@ export default function Container(props) {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
-        {meta.date && (
-          <meta property="article:published_time" content={meta.date} />
-        )}
+        {meta.date && <meta property="article:published_time" content={meta.date} />}
       </Head>
       <Header />
-      <main
-        id="skip"
-        className="flex flex-col justify-center px-8 bg-white dark:bg-black"
-      >
+      <main id="skip" className="flex flex-col justify-center px-8 bg-white dark:bg-black">
         {children}
         <Footer />
       </main>

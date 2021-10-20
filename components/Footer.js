@@ -1,4 +1,4 @@
-import NextLink from 'next/link';
+import NextLink from "next/link";
 
 export default function Footer() {
   return (
@@ -11,15 +11,9 @@ export default function Footer() {
         </div>
         <div className="flow-root ...">
           <div className="my-4 ...">
-            <button
-              type="button"
-              className="h-10 p-1 bg-blue-500 rounded dark:bg-blue-500 w-30"
-            >
+            <button type="button" className="h-10 p-1 bg-blue-500 rounded dark:bg-blue-500 w-30">
               <NextLink href="/cv.pdf">
-                <a
-                  target="_blank"
-                  className="p-2 text-white md:p-4 dark:text-gray-100"
-                >
+                <a target="_blank" className="p-2 text-white md:p-4 dark:text-gray-100">
                   Curriculum
                 </a>
               </NextLink>
