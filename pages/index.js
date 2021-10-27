@@ -1,22 +1,21 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import Image from "next/image";
-import Link from "next/link";
 
 import Container from "@/components/Container";
 import Skills from "@/components/Skills";
 
-import { getPostsAndPortfolio } from "../lib/data";
+// import { getPostsAndPortfolio } from "../lib/data";
 
-export const getStaticProps = async () => {
-  const data = await getPostsAndPortfolio();
-  return {
-    props: {
-      data,
-    },
-  };
-};
+// export const getStaticProps = async () => {
+//   const data = await getPostsAndPortfolio();
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// };
 
-export default function Home({ data }) {
+export default function Home() {
   return (
     <Container>
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
