@@ -51,9 +51,6 @@ export default function Header() {
         <NextLink href="/about">
           <a className="p-2 text-gray-900 md:p-4 dark:text-gray-100">SOBRE MI</a>
         </NextLink>
-        <NextLink href="/usos">
-          <a className="p-2 text-gray-900 md:p-4 dark:text-gray-100">USOS</a>
-        </NextLink>
         <NextLink href="/blog">
           <a className="p-2 text-gray-900 md:p-4 dark:text-gray-100">BLOG</a>
         </NextLink>
