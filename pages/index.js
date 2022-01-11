@@ -13,18 +13,20 @@ export default function Home() {
             <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
               Andres Reyes
             </h1>
-            <h2 className="text-gray-700 dark:text-gray-200 mb-4">FrontEnd Developer</h2>
+            <span className="text-gray-700 underline decoration-2 decoration-blue-300 dark:text-gray-200 mb-4">
+              FrontEnd Developer
+            </span>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-              Especializado en el ecosistema de JavaScript me encanta <br />
-              el estudio y aprender cosas nuevas. <br />
+              Especializado en el ecosistema de JavaScript me encanta el estudio y aprender cosas
+              nuevas. <br />
               Egresado del Sena y estudiantante de Platzi 💚
             </p>
           </div>
           <div className="w-[80px] sm:w-[300px] relative mb-8 sm:mb-0 mr-auto">
             <Image
               alt="Andres Reyes"
-              height={150}
-              width={150}
+              height={200}
+              width={200}
               src="/static/images/profile.png"
               className="rounded-full object-cover"
             />
