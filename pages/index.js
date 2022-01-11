@@ -7,27 +7,32 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <Container>
-      <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 text-2xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
-          ¡Hola 👋! <br /> Soy Andres Reyes
-        </h1>
-        <div className="flex flex-col items-center py-4 mt-8 bg-gray-800 border-l-8 border-green-300  md:flex-row rounded-xl">
-          <h2 className="pl-4 text-lg text-gray-300 dark:text-gray-400 md:pr-4 mb-11 md:mb-0 ">
-            Soy Frontend Developer especializado en el ecosistema de JavaScript. Amante de las
-            buenas prácticas y del software de calidad. Soy Frontend Developer especializado en el
-            ecosistema de JavaScript. Amante de las buenas prácticas y del software de calidad.
-          </h2>
-          <Image
-            alt="Andres Reyes"
-            height={900}
-            width={900}
-            src="/static/images/profile_areyes.png"
-            className="object-cover rounded-full"
-          />
+      <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
+        <div className="flex flex-col-reverse sm:flex-row items-start">
+          <div className="flex flex-col pr-8">
+            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
+              Andres Reyes
+            </h1>
+            <h2 className="text-gray-700 dark:text-gray-200 mb-4">FrontEnd Developer</h2>
+            <p className="text-gray-600 dark:text-gray-400 mb-16">
+              Especializado en el ecosistema de JavaScript me encanta <br />
+              el estudio y aprender cosas nuevas. <br />
+              Egresado del Sena y estudiantante de Platzi 💚
+            </p>
+          </div>
+          <div className="w-[80px] sm:w-[300px] relative mb-8 sm:mb-0 mr-auto">
+            <Image
+              alt="Andres Reyes"
+              height={150}
+              width={150}
+              src="/static/images/profile.png"
+              className="rounded-full object-cover"
+            />
+          </div>
         </div>
         <Skills />
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-8 mt-4 text-black dark:text-white">
-          ✍️Timeline
+          🕵️Timeline
         </h3>
         <h3 className="text-lg md:text-xl font-bold mb-4 tracking-tight text-gray-900 dark:text-gray-100">
           2021

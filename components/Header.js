@@ -6,7 +6,6 @@ export default function Header() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
 
   return (
