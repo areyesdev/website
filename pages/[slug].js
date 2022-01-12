@@ -1,9 +1,19 @@
+/* eslint-disable simple-import-sort/imports */
 import { MDXRemote } from "next-mdx-remote";
 
-import { getFileBySlug, getFiles } from "@/lib/mdx";
+import { getFiles, getFileBySlug } from "@/lib/mdx";
+import Container from "@/components/Container";
+import { Layout } from "@/components/Layout";
+import { MDXComponents } from "@/components/MDXComponents";
 
-export default function Post({ source }) {
-  return <MDXRemote {...source} />;
+export default function Post({ source, frontmatter }) {
+  return (
+    <Container>
+      <Layout metadata={frontmatter}>
+        <MDXRemote {...source} components={MDXComponents} />
+      </Layout>
+    </Container>
+  );
 }
 
 export async function getStaticPaths() {
@@ -21,12 +31,15 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { source, frontMatter } = await getFileBySlug("posts", params.slug);
+  const { source, frontmatter } = await getFileBySlug("posts", params.slug);
 
   return {
     props: {
       source,
-      frontMatter,
+      frontmatter: {
+        slug: params.slug,
+        ...frontmatter,
+      },
     },
   };
 }

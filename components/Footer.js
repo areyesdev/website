@@ -4,8 +4,8 @@ import NextLink from "next/link";
 export default function Footer() {
   return (
     <footer>
-      <div className="flex items-center justify-between w-full max-w-4xl p-8 mx-auto my-0 bg-white sticky-nav md:my-8 dark:bg-black bg-opacity-60">
-        <div className="flow-root ...">
+      <div className="flex items-center  justify-between w-full max-w-4xl p-8 mx-auto my-0 bg-white md:my-8 dark:bg-black bg-opacity-60">
+        <div className="flow-root">
           <div className="my-4 ...">
             <p>Hecho con ❤️ NextJS, MDX, TailwindCSS, Vercel @areyesdev</p>
           </div>
