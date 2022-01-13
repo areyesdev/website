@@ -1,6 +1,29 @@
+import cn from "classnames";
 import NextLink from "next/link";
+import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+
+import MobileMenu from "./MobileMenu";
+
+function NavItem({ href, text }) {
+  const router = useRouter();
+  const isActive = router.asPath === href;
+
+  return (
+    <NextLink href={href}>
+      <a
+        className={cn(
+          isActive
+            ? "font-semibold text-gray-800 dark:text-gray-200"
+            : "font-normal text-gray-600 dark:text-gray-400",
+          "hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all",
+        )}>
+        <span className="capsize">{text}</span>
+      </a>
+    </NextLink>
+  );
+}
 
 export default function Header() {
   const [mounted, setMounted] = useState(false);
@@ -43,16 +66,11 @@ export default function Header() {
           </svg>
         )}
       </button>
-      <div>
-        <NextLink href="/">
-          <a className="p-2 text-gray-900 md:p-4 dark:text-gray-100">HOME</a>
-        </NextLink>
-        <NextLink href="/about">
-          <a className="p-2 text-gray-900 md:p-4 dark:text-gray-100">SOBRE MI</a>
-        </NextLink>
-        <NextLink href="/blog">
-          <a className="p-2 text-gray-900 md:p-4 dark:text-gray-100">BLOG</a>
-        </NextLink>
+      <div className="ml-[-0.60rem]">
+        <MobileMenu />
+        <NavItem href="/" text="Home" />
+        <NavItem href="/about" text="Sobre mí" />
+        <NavItem href="/blog" text="Blog" />
       </div>
     </nav>
   );
