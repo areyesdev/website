@@ -4,7 +4,7 @@ import Container from "@/components/Container";
 import { Layout } from "@/components/Layout";
 import { getFileBySlug, getFiles } from "@/lib/mdx";
 
-export default function Post({ source, frontmatter }) {
+export default function Page({ source, frontmatter }) {
   return (
     <Container>
       <Layout metadata={frontmatter}>
@@ -15,10 +15,10 @@ export default function Post({ source, frontmatter }) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getFiles("posts");
-  const paths = posts.map((post) => ({
+  const pages = await getFiles("pages");
+  const paths = pages.map((page) => ({
     params: {
-      slug: post.replace(/\.mdx/, ""),
+      slug: page.replace(/\.mdx/, ""),
     },
   }));
 
@@ -29,15 +29,12 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { source, frontmatter } = await getFileBySlug("posts", params.slug);
+  const { source, frontmatter } = await getFileBySlug("pages", params.slug);
 
   return {
     props: {
       source,
-      frontmatter: {
-        slug: params.slug,
-        ...frontmatter,
-      },
+      frontmatter,
     },
   };
 }

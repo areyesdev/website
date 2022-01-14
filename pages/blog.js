@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-key */
-import Link from "next/link";
+import NextLink from "next/link";
 
 import Container from "@/components/Container";
 import { Layout } from "@/components/Layout";
@@ -16,11 +16,11 @@ export default function Blog({ posts }) {
     <Container>
       <Layout>
         <h1 className="mb-4 text-2xl font-bold tracking-tight text-black  md:text-5xl dark:text-white">
-          Blog
+          Blog ✍️
         </h1>
         <div className="flex flex-col justify-center items-start max-w-2xl 	">
           {posts.map((post) => (
-            <Link key={post.slug} href={post.slug}>
+            <NextLink key={post.slug} href={post.slug}>
               <div className="flex flex-col mb-4">
                 <h2>{post.title} &rarr;</h2>
                 <p>{post.author}</p>
@@ -32,9 +32,8 @@ export default function Blog({ posts }) {
                     </span>
                   ))}
                 </p>
-                <span className=""></span>
               </div>
-            </Link>
+            </NextLink>
           ))}
         </div>
       </Layout>

@@ -69,7 +69,7 @@ export default function Header() {
       <div className="ml-[-0.60rem]">
         <MobileMenu />
         <NavItem href="/" text="Home" />
-        <NavItem href="/about" text="Sobre mí" />
+        <NavItem href="/p/sobre-mi" text="Sobre mí" />
         <NavItem href="/blog" text="Blog" />
       </div>
     </nav>
