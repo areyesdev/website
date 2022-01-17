@@ -15,19 +15,21 @@ export default function Blog({ posts }) {
   return (
     <Container>
       <Layout>
-        <h1 className="mb-4 text-2xl font-bold tracking-tight text-black  md:text-5xl dark:text-white">
+        <h1 className="mb-6 text-2xl font-bold tracking-tight text-black  md:text-5xl dark:text-white">
           Blog ✍️
         </h1>
-        <div className="flex flex-col justify-center items-start max-w-2xl 	">
+        <div className="flex flex-col cursor-pointer ">
           {posts.map((post) => (
             <NextLink key={post.slug} href={post.slug}>
-              <div className="flex flex-col mb-4">
-                <h2>{post.title} &rarr;</h2>
+              <div className="border-b-2 border-blue-300 p-4">
+                <h2 className="font-bold text-lg">{post.title} &rarr;</h2>
                 <p>{post.author}</p>
                 <p>
                   {post.date}
                   {post.tags.map((tag) => (
-                    <span key={tag} className="rounded-full p-1 bg-green-300 m-2">
+                    <span
+                      key={tag}
+                      className=" rounded-md text-sm text-center text-gray-600 bg-blue-300 my-2 p-1 ml-1 ">
                       {tag}
                     </span>
                   ))}
