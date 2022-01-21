@@ -17,8 +17,7 @@ export default function Home() {
               FrontEnd Developer
             </span>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-              Especializado en el ecosistema de JavaScript me encanta el estudio y aprender cosas
-              nuevas. <br />
+              Especializado en el ecosistema de JavaScript me encanta el estudio y aprender cosas nuevas y mantener buenas practicas. <br />
               Egresado del Sena y estudiantante de Platzi 💚
             </p>
           </div>
