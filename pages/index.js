@@ -17,7 +17,8 @@ export default function Home() {
               FrontEnd Developer
             </span>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-              Especializado en el ecosistema de JavaScript me encanta el estudio y aprender cosas nuevas y mantener buenas practicas. <br />
+              Especializado en el ecosistema de JavaScript me encanta el estudio y aprender cosas
+              nuevas y mantener buenas practicas. <br />
               Egresado del Sena y estudiantante de Platzi 💚
             </p>
           </div>
@@ -26,7 +27,7 @@ export default function Home() {
               alt="Andres Reyes"
               height={200}
               width={200}
-              src="/static/images/profile.png"
+              src="/static/images/areyes_2.png"
               className="rounded-full object-cover"
             />
           </div>

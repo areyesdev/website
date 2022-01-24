@@ -21,7 +21,7 @@ export default function Blog({ posts }) {
         <div className="flex flex-col cursor-pointer ">
           {posts.map((post) => (
             <NextLink key={post.slug} href={post.slug}>
-              <div className="border-b-2 border-blue-300 p-4">
+              <div className="border-b-2 border-blue-500 p-4">
                 <h2 className="font-bold text-lg">{post.title} &rarr;</h2>
                 <p>{post.author}</p>
                 <p>
