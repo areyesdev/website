@@ -27,7 +27,7 @@ export default function Home() {
               alt="Andres Reyes"
               height={200}
               width={200}
-              src="/static/images/areyes_2.png"
+              src="/static/images/profile.png"
               className="rounded-full object-cover"
             />
           </div>
