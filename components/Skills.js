@@ -19,8 +19,7 @@ export default function Skills() {
         Me encanta aprender tecnologías nuevas y emocionantes. Estas son algunas de las que manejo
         en mi 🌞.
       </p>
-      {/* TODO: Improve the mobile version of skills */}
-      <div className="w-full grid grid-cols-3 md:grid-cols-4 grid-flow-row gap-y-8 gap-x-10 mb-16">
+      <div className="w-full grid grid-cols-2 md:grid-cols-3 grid-flow-row gap-y-8 gap-x-10 mb-16">
         <div className="bg-white rounded shadow-lg justify-center items-center flex flex-col dark:text-gray-700 moveUp">
           <ExternalLink href="https://developer.mozilla.org/es/docs/Web/HTML">
             <Image alt="HTML logo" height={height} width={width} src="/logos/html.png" />
