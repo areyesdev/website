@@ -2,8 +2,8 @@
 import Image from "next/image";
 
 import Container from "@/components/Container";
-import Skills from "@/components/Skills";
 import Project from "@/components/Projects";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
             <span className="text-gray-700 underline decoration-2 decoration-blue-300 dark:text-gray-200 mb-4">
               FrontEnd Developer
             </span>
-            <p className="text-gray-600 dark:text-gray-400 mb-16">
+            <p className="mb-16">
               Especializado en el ecosistema de JavaScript me encanta el estudio y aprender cosas
               nuevas y mantener buenas practicas. <br />
               Egresado del Sena y estudiantante de Platzi 💚

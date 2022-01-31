@@ -12,7 +12,7 @@ export default function Skills() {
 
   return (
     <>
-      <h3 className="font-bold text-2xl md:text-4xl tracking-tight text-black dark:text-white">
+      <h3 className="font-bold text-2xl md:text-4xl tracking-tight text-black dark:text-white mb-2">
         Skill tecnológicos y herramientas
       </h3>
       <p className="mb-6">
