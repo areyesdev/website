@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+import Image from "next/image";
 import { FiExternalLink } from "react-icons/fi";
 
 export default function Projects() {
@@ -20,7 +21,7 @@ export default function Projects() {
           target="_blank"
           rel="noopener noreferrer"
           className="w-full md:w-7/12 bg-white relative md:absolute md:left-0 rounded shadow-xl overflow-hidden moveUp">
-          <img src="/projects/portfolio.png" />
+          <Image alt="Portfolio areyesdev" width={650} height={400} src="/projects/portfolio.png" />
         </a>
         <div className="flex flex-col text-right z-10 w-full md:w-6/12">
           <h3 className="text-gray-700 dark:text-gray-200">areyesdev</h3>
@@ -48,7 +49,7 @@ export default function Projects() {
         </div>
       </article>
 
-      <article className="flex flex-col-reverse md:flex-row relative w-full md:h-80 mt-16">
+      <article className="flex flex-col-reverse md:flex-row relative w-full md:h-80 mt-8">
         <div className="flex flex-col z-10 w-full md:w-6/12">
           <h3 className="text-gray-700 dark:text-gray-200">Space Jelly Sjop</h3>
           <p className="font-semibold text-gray-500 dark:text-gray-300">
@@ -79,7 +80,7 @@ export default function Projects() {
           target="_blank"
           rel="noopener noreferrer"
           className="w-full md:w-7/12 bg-grayBrand relative md:absolute md:right-0 rounded shadow-xl overflow-hidden moveUp">
-          <img src="/projects/ecommerce.png" />
+          <Image width={650} height={400} alt="ecommerce store" src="/projects/ecommerce.png" />
         </a>
       </article>
     </section>
