@@ -2,13 +2,14 @@ import { MDXRemote } from "next-mdx-remote";
 
 import Container from "@/components/Container";
 import { Layout } from "@/components/Layout";
+import { MDXComponents } from "@/components/MDXComponents";
 import { getFileBySlug, getFiles } from "@/lib/mdx";
 
 export default function Post({ source, frontmatter }) {
   return (
     <Container>
       <Layout metadata={frontmatter}>
-        <MDXRemote {...source} />
+        <MDXRemote {...source} components={MDXComponents} />
       </Layout>
     </Container>
   );

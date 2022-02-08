@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import NextLink from "next/link";
-import { BsCalendar4Week } from "react-icons/bs";
+import { BsCalendarWeek } from "react-icons/bs";
 
 import Container from "@/components/Container";
 import { Layout } from "@/components/Layout";
@@ -25,15 +25,15 @@ export default function Blog({ posts }) {
         <div className="flex flex-col cursor-pointer ">
           {posts.map((post) => (
             <NextLink key={post.slug} href={post.slug}>
-              <div className="border-b-2 border-blue-500 p-4">
+              <div>
                 <h2 className="font-semibold text-xl">{post.title} &rarr;</h2>
-                <div>
-                  <BsCalendar4Week size={24} />
-                  {post.date}
+                <div className="flex items-center">
+                  <BsCalendarWeek size={14} className="text-gray-400" />
+                  <span className="p-1 text-xs text-gray-400">{post.date}</span>
                   {post.tags.map((tag) => (
                     <span
                       key={tag}
-                      className=" rounded-md text-sm text-center text-gray-600 bg-blue-300 my-2 p-1 ml-1 ">
+                      className=" rounded-md  font-semibold text-gray-600 bg-blue-300 text-xs p-1 m-1">
                       {tag}
                     </span>
                   ))}

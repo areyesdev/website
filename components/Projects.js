@@ -17,7 +17,7 @@ export default function Projects() {
 
       <article className="flex flex-col md:flex-row relative w-full md:h-80 justify-end mt-8">
         <a
-          href="https://buildingai.elementsofai.com"
+          href="https://github.com/areyesdev/website"
           target="_blank"
           rel="noopener noreferrer"
           className="w-full md:w-7/12 bg-white relative md:absolute md:left-0 rounded shadow-xl overflow-hidden moveUp">
@@ -39,7 +39,7 @@ export default function Projects() {
           </div>
           <div className="flex flex-row justify-end mt-4">
             <a
-              href="https://ecommerce-store-stripe.vercel.app/"
+              href="https://github.com/areyesdev/website"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-700 transition-all ml-3 dark:text-gray-300">
@@ -57,7 +57,8 @@ export default function Projects() {
           </p>
           <div className="bg-white py-3 px-4 rounded shadow-xl dark:text-gray-700">
             <p>
-              is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+              Ecommerce creado a modo de prueba para como podemsos integrar la pasarela de pagos
+              Stripe.
             </p>
           </div>
           <div className="flex flex-row mt-8">
@@ -67,7 +68,7 @@ export default function Projects() {
           </div>
           <div className="flex flex-row mt-4">
             <a
-              href="https://equals.gg"
+              href="https://ecommerce-store-stripe.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-700 transition-all ml-3 dark:text-gray-300">
