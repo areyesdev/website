@@ -14,7 +14,7 @@ export default function Home() {
             <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
               Andres Reyes
             </h1>
-            <span className="text-gray-700 underline decoration-3 decoration-blue-300 dark:text-gray-200 mb-4">
+            <span className="text-gray-700 font-semibold underline decoration-3 decoration-blue-300 dark:text-gray-200 mb-4">
               FrontEnd Developer
             </span>
             <p className="mb-16">
@@ -153,7 +153,8 @@ export default function Home() {
               href="mailto:areyesdev@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="no-underline">
+              className="no-underline"
+            >
               areyesdev@gmail.com ✉️
             </a>{" "}
             para ponerse en contacto conmigo.

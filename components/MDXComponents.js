@@ -6,13 +6,14 @@ function RoundedImage(props) {
     <Image
       width={props.width}
       height={props.height}
-      alt={props.caption}
-      className="rounded-xl"
+      alt={props.alt}
+      className="rounded-xl "
       src={props.src}
     />
   );
 }
 
 export const MDXComponents = {
+  h2: (props) => <h1 className="font-bold text-3xl" {...props} />,
   Image: RoundedImage,
 };
