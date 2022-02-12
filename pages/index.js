@@ -51,7 +51,7 @@ export default function Home() {
               className="no-underline"
             >
               areyesdev@gmail.com ✉️
-            </a>{" "}
+            </a>
             para ponerse en contacto conmigo.
           </p>
         </section>
