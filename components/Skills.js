@@ -16,13 +16,18 @@ export default function Skills() {
         Skill tecnológicos y herramientas
       </h3>
       <p className="mb-6">
-        Me encanta aprender tecnologías nuevas y emocionantes. Estas son algunas de las que manejo
-        en mi 🌞.
+        Me encanta aprender tecnologías nuevas y emocionantes. Estas son algunas
+        de las que manejo en mi día a día 🌞.
       </p>
       <div className="w-full grid grid-cols-2 md:grid-cols-3 grid-flow-row gap-y-8 gap-x-10 mb-16">
         <div className="bg-white rounded shadow-lg justify-center items-center flex flex-col dark:text-gray-700 moveUp">
           <ExternalLink href="https://developer.mozilla.org/es/docs/Web/HTML">
-            <Image alt="HTML logo" height={height} width={width} src="/logos/html.png" />
+            <Image
+              alt="HTML logo"
+              height={height}
+              width={width}
+              src="/logos/html.png"
+            />
           </ExternalLink>
         </div>
         <div className="bg-white rounded shadow-lg justify-center items-center flex flex-col h-32 dark:text-gray-700 moveUp">
@@ -38,17 +43,32 @@ export default function Skills() {
         </div>
         <div className="bg-white rounded shadow-lg justify-center items-center flex flex-col h-32 dark:text-gray-700 moveUp">
           <ExternalLink href="https://developer.mozilla.org/es/docs/Web/JavaScript">
-            <Image alt="JavaScript logo" height={height} width={width} src="/logos/js.png" />
+            <Image
+              alt="JavaScript logo"
+              height={height}
+              width={width}
+              src="/logos/js.png"
+            />
           </ExternalLink>
         </div>
         <div className="bg-white rounded shadow-lg justify-center items-center flex flex-col h-32 dark:text-gray-700 moveUp">
           <ExternalLink href="https://git-scm.com/">
-            <Image alt="Git logo" height={height} width={width} src="/logos/git.png" />
+            <Image
+              alt="Git logo"
+              height={height}
+              width={width}
+              src="/logos/git.png"
+            />
           </ExternalLink>
         </div>
         <div className="bg-white rounded shadow-lg justify-center items-center flex flex-col h-32 dark:text-gray-700 moveUp">
           <ExternalLink href="https://graphql.org/">
-            <Image alt="GraphQL logo" height={height} width={width} src="/logos/graphql.png" />
+            <Image
+              alt="GraphQL logo"
+              height={height}
+              width={width}
+              src="/logos/graphql.png"
+            />
           </ExternalLink>
         </div>
         <div className="bg-white rounded shadow-lg justify-center items-center flex flex-col h-32 dark:text-gray-700 moveUp">
@@ -97,7 +117,12 @@ export default function Skills() {
         </div>
         <div className="bg-white rounded shadow-lg justify-center items-center flex flex-col h-32 dark:text-gray-700 moveUp">
           <ExternalLink href="https://github.com/">
-            <Image alt="GitHub logo" height={height} width={width} src="/logos/github_dark.png" />
+            <Image
+              alt="GitHub logo"
+              height={height}
+              width={width}
+              src="/logos/github_dark.png"
+            />
           </ExternalLink>
         </div>
         <div className="bg-white rounded shadow-lg justify-center items-center flex flex-col h-32 dark:text-gray-700 moveUp">
