@@ -12,9 +12,9 @@ export default function Skills() {
 
   return (
     <>
-      <h3 className="font-bold text-2xl md:text-4xl tracking-tight text-black dark:text-white mb-2">
+      <h2 className="font-bold text-2xl md:text-4xl tracking-tight text-black dark:text-white mb-2">
         Skill tecnológicos y herramientas
-      </h3>
+      </h2>
       <p className="mb-6">
         Me encanta aprender tecnologías nuevas y emocionantes. Estas son algunas
         de las que manejo en mi día a día 🌞.

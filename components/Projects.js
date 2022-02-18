@@ -10,8 +10,8 @@ export default function Projects() {
           Proyectos
         </h2>
         <p>
-          Estos son algunos de mis prooyectos más destacados que he desarrollado durande mi
-          preparación como Developer.
+          Estos son algunos de mis prooyectos más destacados que he desarrollado
+          durande mi preparación como Developer.
         </p>
       </div>
 
@@ -20,16 +20,24 @@ export default function Projects() {
           href="https://github.com/areyesdev/website"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full md:w-7/12 bg-white relative md:absolute md:left-0 rounded shadow-xl overflow-hidden moveUp">
-          <Image alt="Portfolio areyesdev" width={650} height={400} src="/projects/portfolio.png" />
+          className="w-full md:w-7/12 bg-white relative md:absolute md:left-0 rounded shadow-xl overflow-hidden moveUp"
+        >
+          <Image
+            alt="Portfolio areyesdev"
+            width={650}
+            height={400}
+            src="/projects/portfolio.png"
+          />
         </a>
         <div className="flex flex-col text-right z-10 w-full md:w-6/12">
           <h3 className="text-gray-700 dark:text-gray-200">areyesdev</h3>
-          <p className="font-semibold text-gray-500 dark:text-gray-300">Portafolio web</p>
+          <p className="font-semibold text-gray-500 dark:text-gray-300">
+            Portafolio web
+          </p>
           <div className="bg-white py-3 px-4 rounded shadow-xl dark:text-gray-700">
             <p>
-              Portafolio desarrollado con diferentes tecnologias y con buenas practicas de
-              desarrollo.
+              Portafolio desarrollado con diferentes tecnologias y con buenas
+              practicas de desarrollo.
             </p>
           </div>
           <div className="flex flex-row justify-end mt-8">
@@ -42,8 +50,10 @@ export default function Projects() {
               href="https://github.com/areyesdev/website"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-700 transition-all ml-3 dark:text-gray-300">
+              className="flex text-gray-500 hover:text-gray-700 transition-all ml-3 dark:text-gray-300"
+            >
               <FiExternalLink size={24} />
+              Ver proyecto
             </a>
           </div>
         </div>
@@ -57,8 +67,8 @@ export default function Projects() {
           </p>
           <div className="bg-white py-3 px-4 rounded shadow-xl dark:text-gray-700">
             <p>
-              Ecommerce creado a modo de prueba para como podemsos integrar la pasarela de pagos
-              Stripe.
+              Ecommerce creado a modo de prueba para como podemsos integrar la
+              pasarela de pagos Stripe.
             </p>
           </div>
           <div className="flex flex-row mt-8">
@@ -71,8 +81,10 @@ export default function Projects() {
               href="https://ecommerce-store-stripe.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-700 transition-all ml-3 dark:text-gray-300">
+              className="flex text-gray-500 hover:text-gray-700 transition-all ml-3 dark:text-gray-300"
+            >
               <FiExternalLink size={24} />
+              Ver proyecto
             </a>
           </div>
         </div>
@@ -80,8 +92,14 @@ export default function Projects() {
           href="https://ecommerce-store-stripe.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full md:w-7/12 bg-grayBrand relative md:absolute md:right-0 rounded shadow-xl overflow-hidden moveUp">
-          <Image width={650} height={400} alt="ecommerce store" src="/projects/ecommerce.png" />
+          className="w-full md:w-7/12 bg-grayBrand relative md:absolute md:right-0 rounded shadow-xl overflow-hidden moveUp"
+        >
+          <Image
+            width={650}
+            height={400}
+            alt="ecommerce store"
+            src="/projects/ecommerce.png"
+          />
         </a>
       </article>
     </section>

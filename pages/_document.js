@@ -3,12 +3,12 @@ import Document, { Head, Html, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
-          <link
+          {/* <link
             rel="stylesheet"
             href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.css"
-          />
+          /> */}
         </Head>
         <body>
           <Main />
