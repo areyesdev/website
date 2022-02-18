@@ -9,8 +9,9 @@ export default function Container(props) {
   const router = useRouter();
   const meta = {
     title: "Andres Reyes – FrontEnd Developer.",
-    description: "Front-end developer, JavaScript lover.",
-    image: "https://andresreyes.netlify.app/",
+    description:
+      "Especializado en el ecosistema de JavaScript me encanta el estudio y aprender cosas nuevas y mantener buenas practicas.",
+    image: "https://website-areyesdev.vercel.app/",
     type: "website",
     ...customMeta,
   };
@@ -20,8 +21,14 @@ export default function Container(props) {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`http://localhost:3000${router.asPath}`} />
-        <link rel="canonical" href={`http://localhost:3000${router.asPath}`} />
+        <meta
+          property="og:url"
+          content={`https://website-areyesdev.vercel.app/${router.asPath}`}
+        />
+        <link
+          rel="canonical"
+          href={`https://website-areyesdev.vercel.app/${router.asPath}`}
+        />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Andres Reyes" />
         <meta property="og:description" content={meta.description} />
@@ -32,10 +39,15 @@ export default function Container(props) {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
-        {meta.date && <meta property="article:published_time" content={meta.date} />}
+        {meta.date && (
+          <meta property="article:published_time" content={meta.date} />
+        )}
       </Head>
       <Header />
-      <main id="skip" className="flex flex-col justify-center px-8 bg-white dark:bg-black">
+      <main
+        id="skip"
+        className="flex flex-col justify-center px-8 bg-white dark:bg-black"
+      >
         {children}
         <Footer />
       </main>
